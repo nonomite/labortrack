@@ -1,0 +1,332 @@
+body {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        display: none;
+    }
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+}
+.nav {
+    padding: 10px;
+}
+
+.nav-container > .nav-item{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+}
+
+
+
+li {
+    text-decoration: none;
+    color: #181818;
+    display: block;
+    margin-right: 20px;
+    height: max-content;
+}
+
+a {
+    text-decoration: none;
+    color: #181818;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: lightblue;
+    height: 350px;
+}
+
+.container > div.content {
+    border: 1px solid black;
+    background-color: rgb(22, 111, 114);
+    padding: 5px;
+    margin-top: 15px;
+}
+
+
+h1 {
+    color: black;
+}
+
+
+/*fonts*/
+h1, body, p {
+    font-family:  'Segoe UI', sans-serif;
+}
+
+.page-heading {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.page-body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.title {
+    font-size: 50px;
+    margin: auto;
+    padding: 0;
+}
+
+
+#title {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    height: 45px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+.header-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.header-flex-item {
+    display: flex;
+}
+
+
+/* footer styles */
+footer {
+    background-color: black ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* pop-up modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    margin: auto;
+    
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    margin-top: 10%;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    height: max-content;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+#signup-form {
+    display: none;
+}
+
+.pop-up-heading1 {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 10%;
+    font-size: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    /* margin: 10px 0; */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+}
+
+
+/* buttons */
+#pop-up-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    height: 25px;
+}
+
+#submit-btn {
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    width: 100%;
+}
+
+#submit-btn:hover {
+    background-color: grey;
+}
+
+#pop-up-btn:hover {
+    background-color: darkred;
+}
+
+#to-signup-btn, #to-login-btn {
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#signup-btn, #login-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#to-signup-btn:hover, #to-login-btn:hover {
+    background-color: grey;
+
+}
+
+#signup-btn:hover, #login-btn:hover {
+    background-color: darkred ;
+}   
+
+
+/*brand header */
+.brand-header {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #181818;
+}
+
+/* Home/Features Div */
+.flex {
+    display: flex;
+    gap: 10px;
+    padding: 1p0x;
+    width: 40%;
+    margin: auto;
+}
+
+.flex-content {
+    background-color: #181818;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+    margin: auto;
+    width: 30%;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Home/ Contact Form */
+.contact-section {
+    display: none;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 40%;
+    margin: auto;
+}
+
+/* Library Page */
+#input-search {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.articles-content {
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.article-content h3 {
+    border: 1px solid black;
+    
+}
+
+.article-content p {
+    margin-top: 0;
+}
