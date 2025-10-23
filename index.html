@@ -1,102 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>LaborTrack</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/css/index.css">
-    <link rel="icon" href="resources/labortrack.png" type="image/x-icon">
-    <script src="js/index.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="header-flex">
-            <div class="header-flex-container">
-                <a href="index.html"class="header-flex-container">
-                    <img src="resources/labortrack.png" alt="MedWeb Logo" id="logo" class ="header-flex-item">
-                    <h1 id="title" class ="header-flex-item">LaborTrack</h1>
-                </a>
-            </div>
-            <nav class="nav-container">
-                <ul class="nav">
-                    <li class="nav-item"><a href="">HOME</a></li>
-                    <li class="nav-item"><a href="#contact-section" id="contact-btn">CONTACT US</a></li>
-                    <li class="nav-item"><a id="pop-up-btn" href="#">SIGN IN</a></li>
-                </ul>
-            </nav>
+    <head>
+        <meta charset="UTF-8">
+        <title>LaborTrack</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/css/main.css">
+        <link rel="icon" href="resources/labortrack.png" type="image/x-icon">
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <div class="scroll-container">
+            <header>
+                <div class="header-flex">
+                    <div class="header-flex-container">
+                        <a href="index.html"class="header-flex-container">
+                            <img src="resources/labortrack.png" alt="MedWeb Logo" id="logo" class ="header-flex-item">
+                            <h1 id="logo-text" class ="header-flex-item">LaborTrack</h1>
+                        </a>
+                    </div>
+                    <!-- nav -->
+                    <nav class="nav-container">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="">HOME</a></li>
+                            <li class="nav-item"><a href="#contact-section" id="contact-btn">CONTACT US</a></li>
+                            <li class="nav-item"><a id="pop-up-btn" href="#">SIGN IN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
         </div>
-    </header>
-    
-    <div id="home-section">
-        <h2 class="page-heading">Welcome to LaborTrack</h2>
-        <p class="page-body"><i>Decent Work, Real-Time Data.</i></p>
+        
+        <div id="home-section" class="home-section">
+            <div class="parent-background">
+                <div class="left-div">
+                    <h2>Welcome to <u>LaborTrack</u></h2>
+                    <p >Your trusted patform for understanding and advocating for your labor rights.
+                        <br> Explore our tools and resources designed to empower workers countrywide.
+                    </p>
+                </div>
+                <div  class="div flex">
+                    <a id="wage-calculator" href="wage-calculator.php"  class="flex-content">
+                        <h3>Wage Calculator</h3> 
+                        <img src="resources/5.png" alt="Wage Calculator" class="responsive-image">
+                    </a>
+                    <a id="violation-reporting" href="violation-report.html" class="flex-content">
+                        <h3>Violation Reporting</h3>
+                        <img src="resources/6.png" alt="Violation Reporting" class="responsive-image">
+                    </a>
+                    <a id="library" href="labor-library.html" class="flex-content">
+                        <h3>Labor Rights Library</h3>
+                        <img src="resources/7.png" alt="Library" class="responsive-image">
+                    </a>
+                </div>
 
-        <!-- Features panel -->
-        <div class="flex">
-            <a id="wage-calculator" href="#"  class="flex-content">
-                <h3>Wage Calculator</h3>
-                <img src="resources/5.png" alt="Wage Calculator" class="responsive-image">
-            </a>
-            <a id="violation-reporting" href="#" class="flex-content">
-                <h3>Secure Violation Reporting</h3>
-                <img src="resources/6.png" alt="Secure Violation Reporting" class="responsive-image">
-            </a>
-            <a id="library" href="labor-library.html" class="flex-content">
-                <h3>Labor Rights Library</h3>
-                <img src="resources/7.png" alt="Library" class="responsive-image">
+            </div>
 
-            </a>
+            <div class="aboutUs-section">
+                <div class="center-text">
+                    <h2 class="page-heading">About Us</h2>
+                    <p class="page-body">
+                        LaborTrack is dedicated to empowering workers by providing tools and resources to understand and advocate for their labor rights. <br>
+                        Our platform offers a wage calculator, secure violation reporting, and a comprehensive labor rights library to support fair labor practices worldwide.
+                    </p>
+                </div>
+                <div class="flex-text">
+                    <div>
+                        <h2 class="page-heading">Our Mission</h2>
+                        <p class="page-body">
+                            Our mission is to promote fair labor practices and empower workers with the knowledge and tools they need to advocate for their rights. <br>
+                            We strive to create a safer and more equitable work environment for all.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="page-heading">Our Vision</h2>
+                        <p class="page-body">
+                            We envision a world where every worker is informed, empowered, and able to exercise their labor rights without fear of retaliation. <br>
+                            Through technology and education, we aim to foster a global community that values and upholds the dignity of work.
+                        </p>
+                    </div>
+                </div>
+                <div class="center-text">
+                    <h2 class="page-heading">Our Values</h2>
+                    <p class="page-body">
+                        At LaborTrack, we are committed to integrity, transparency, and respect for all workers. <br>
+                        We believe in the power of education and technology to drive positive change in the labor landscape. <br>
+                        Our values guide us in our mission to support and advocate for workers' rights worldwide.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <!--pop-up div for login and signup-->
-    <div id="pop-up-container" class="modal">
-        <div id="pop-up-box" class="modal-content">
-            <div class="header-flex-container">
-                    <img src="resources/labortrack.png" alt="MedWeb Logo" id="logo" class ="header-flex-item">
-                    <h2 class="brand-header">LaborTrack</h2>
+        <!--pop-up div for login and signup-->
+        <div id="pop-up-container" class="modal">
+            <div id="pop-up-box" class="modal-content">
+                <div class="header-flex-container">
+                        <img src="resources/labortrack.png" alt="MedWeb Logo" id="logo-pop-up" class ="header-flex-item">
+                        <h2 class="brand-header">LaborTrack</h2>
+                </div>
+                <div id="login-div">
+                    <form id="login-form" method="post" enctype="" action="">
+                        <p class="pop-up-heading1">Sign in to your account</p>
+                        <input class="form-input" type="text" placeholder="Username" required><br><br>
+                        <input class="form-input" type="password" placeholder="Password" required><br><br>
+                        <button id="login-btn">SIGN IN</button><br>
+                        or <br>
+                        <button id="to-signup-btn" >SIGN UP</button>
+                    </form>
+                </div>
 
-            </div>
-            <div id="login-div">
-                <form id="login-form" action="">
-                    <p class="pop-up-heading1">Sign in to your account</p>
-                    <input class="form-input" type="text" placeholder="Username" required><br><br>
-                    <input class="form-input" type="password" placeholder="Password" required><br><br>
-                    <button id="login-btn">SIGN IN</button><br>
-                    or <br>
-                    <button id="to-signup-btn" >SIGN UP</button>
-                </form>
-            </div>
-
-            <div id="signup-div">   
-                <form action="" id="signup-form">
-                    <p class="pop-up-heading1">Create an account first</p>
-                    <input class="form-input" type="text" placeholder="Name" required><br><br>
-                    <input class="form-input" type="email" placeholder="Email" required><br><br>
-                    <input class="form-input" type="text" placeholder="Username" required><br><br>
-                    <input class="form-input" type="password" placeholder="Password" required><br><br>
-                    <button id="signup-btn">SIGN UP</button><br>
-                    or <br>
-                    <button id="to-login-btn">SIGN IN</button>
-                </form>
+                <div id="signup-div">   
+                    <form action="" id="signup-form">
+                        <p class="pop-up-heading1">Create an account first</p>
+                        <input class="form-input" type="text" placeholder="Name" required><br><br>
+                        <input class="form-input" type="email" placeholder="Email" required><br><br>
+                        <input class="form-input" type="text" placeholder="Username" required><br><br>
+                        <input class="form-input" type="password" placeholder="Password" required><br><br>
+                        <button id="signup-btn">SIGN UP</button><br>
+                        or <br>
+                        <button id="to-login-btn">SIGN IN</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Contact Form -->
-    <div id="contact-section" class="contact-section">
-            <h2 class="page-heading">Get in Touch</h2>
-            <p class="page-body">Have questions or feedback? We'd love to hear from you! Use the form below to reach out to us.</p>
-        <form id="contact-form" class="contact-form" action="">
-            <input class="form-input" type="text" placeholder="Your Name" required class="contact-input"><br><br>
-            <input class="form-input" type="email" placeholder="Your Email" required class="contact-input"><br><br>
-            <textarea class="form-input" rows="6" placeholder="Your Message" required class="contact-input"></textarea><br><br>
-            <button id="submit-btn" type="submit"  id="contact-btn">SEND MESSAGE</button>
-        </form>
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 MedWeb. All rights reserved.</p>
-    </footer>
-</body>
+        <!-- Contact Form -->
+        <div id="contact-section" class="contact-section">
+                <h2 class="page-heading">Get in Touch with Us!</h2>
+                <p class="page-body">Have questions or feedback? We'd love to hear from you! Use the form below to reach out to us.</p>
+            <form id="contact-form" class="contact-form" action="">
+                <input class="form-input" type="text" placeholder="Your Name" required class="contact-input"><br><br>
+                <input class="form-input" type="email" placeholder="Your Email" required class="contact-input"><br><br>
+                <textarea class="form-input" rows="6" placeholder="Your Message" required class="contact-input"></textarea><br><br>
+                <button id="submit-btn" type="submit"  id="contact-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 MedWeb. All rights reserved.</p>
+        </footer>
+    </body>
 </html>

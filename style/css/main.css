@@ -1,0 +1,553 @@
+/* Scroll for header */
+.scroll-container {
+    white-space: nowrap;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+/* =========================================== */
+
+/* header elements*/
+
+header {
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: max-content;
+}
+
+#logo {
+    height: 55px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.header-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-flex-item {
+    display: flex;
+}
+
+.header-flex-container a {
+    text-decoration: none;
+    color: #181818;
+}
+
+#logo-text {
+    font-size: 55px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.header-flex-container a:hover {
+    color: darkred;
+}
+
+/* ==================================== */
+
+/* navigation styles */
+
+.nav-container > .nav-item{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-container ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    display: flex
+
+}
+
+.nav-container li {
+    text-decoration: none;
+    color: #181818;
+    display: block;
+    margin-right: 20px;
+    height: max-content;
+}
+ .nav-container a {
+    text-decoration: none;
+    color: #181818;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+ }
+
+.nav-container a:hover {
+    color: darkred;
+}
+
+ /* =============================================== */
+
+ /* fonts */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h1, body, p {
+    font-family:  'Segoe UI', sans-serif;
+}
+
+ /* =============================================== */
+
+ /* hero section and library */
+
+.page-heading {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.page-body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+ /* =============================================== */
+
+/* footer styles */
+footer {
+    background-color: black ;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    left: 0;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+ /* =============================================== */
+
+/* pop-up modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    margin: auto;   
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: max-content;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#logo-pop-up {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#signup-form {
+    display: none;
+}
+
+.pop-up-heading1 {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 10%;
+    font-size: 20px;
+}
+
+ /* =============================================== */
+
+ /* library, contact and popup styles */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+}
+
+.form-input:focus {
+    border-color: #555;
+    outline: none;
+}
+
+.form-input:hover {
+    border-color: #888;
+}
+
+/* buttons */
+#pop-up-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    height: 25px;
+}
+
+#submit-btn, #violation-button {
+    background-color: #181818;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    width: 100%;
+}
+
+#submit-btn:hover, #violation-button:hover {
+    background-color: darkred;
+}
+
+#pop-up-btn:hover {
+    background-color: darkred;
+}
+
+#to-signup-btn, #to-login-btn {
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#signup-btn, #login-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#to-signup-btn:hover, #to-login-btn:hover {
+    background-color: grey;
+
+}
+
+#signup-btn:hover, #login-btn:hover {
+    background-color: darkred ;
+}   
+
+ /* =============================================== */
+
+/*brand header */
+.brand-header {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #181818;
+}
+
+/* Home Div */
+
+/* title div and features */
+.home-section {
+    height: 1100px;
+    width: 100%;
+}
+
+.parent-background {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    padding-bottom: 50px;
+
+}
+
+.parent-background > .left-div {
+    margin-left: 50px;
+    text-align: left;
+    width: 70%;
+}
+
+.left-div h2 {
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.left-div p {
+    font-size: 24px;
+}
+
+.parent-background > .div {
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+.left-div u {
+    text-decoration: none;
+    color: darkred;
+}
+
+/* =============================================== */
+
+/* about us section */
+.aboutUs-section {
+    display: block;
+    height: max-content;
+    width: 100%;
+    margin-top: 100px;
+    color: white;
+    background-color: #181818;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.flex-text{
+    display: flex;
+    text-align: center;
+    margin-top: 75px;
+}
+
+
+
+/* features  */
+.flex {
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+.flex-content {
+    background-color: #181818;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+    margin: auto;
+    width: 35%;
+}
+
+.flex a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.flex a:hover {
+    box-shadow: 0 4px 8px rgba(10,10,10,10);
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: darkred;
+}
+
+/* =============================================== */
+
+
+/* Home/ Contact Form */
+.contact-section {
+    display: none;
+    border-radius: 10px;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+}
+
+/* =============================================== */
+
+
+/* Library Page */
+.search-div {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#input-search {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* Article Div */
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    height: max-content;
+    margin-bottom: 50px;
+}
+
+.articles-content {
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.article-content h3 {
+    border: 1px solid black;
+    
+}
+
+.article-content p {
+    margin-top: 0;
+}
+
+.article a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.article a:hover {
+    color: darkred;
+}
+
+.article {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+/* =============================================== */
+
+/* Violation Reporting */
+.violation-reporting {
+    display: block;
+    border-radius: 10px;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    margin-bottom: 100px;
+}
+
+
+/* =============================================== */
+
+/* Calculator */
+.calculator-section {
+    display: block;
+    border-radius: 10px;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    margin-bottom: 100px;
+}
+
+.form-calcu {
+    width: 50%;
+    padding: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.form-calcu-label {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: max-content;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+
+
+}
+
+.form-calcu:focus {
+    border-color: #555;
+    outline: none;
+}
+
+.form-calcu:hover {
+    border-color: #888;
+}
+
+.form-flex {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-calcu > input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+/* ========================================= */ 

@@ -29,16 +29,22 @@
     </div>
 
     <!-- start here -->
-    <div class="violation-reporting">
-        <h2 class="page-heading">Violation Reporting</h2>
-        <form action="">
-            <input class="form-input" type="text" placeholder="Your Alias (optional)">
-            <input class="form-input" type="text" placeholder="Location of Violation" required>
-            <input class="form-input" type="text" placeholder="Date of Violation" required>
-            <input class="form-input" type="text" placeholder="Type of Violation" required>
-            <textarea class="form-input" placeholder="Describe the violation" rows="6" required></textarea>
-            <button class="form-input" id="violation-button" type="submit">SEND MESSAGE</button>
+    <div class="calculator-section">
+        <h2>Wage Calculator</h2>
+        <form id="wage-form">
+            <div class="form-flex">
+                 <input class="form-calcu" type="number" id="salary" name="salary" placeholder="Salary" required>
+                <!-- <input class="form-calcu" type="number" id="hourly-rate" name="hourly-rate" required>     -->
+                    <label class="form-calcu-label" for="intervals-select">Intervals: </label>
+                    <select class="form-calcu" id="intervals-select" name="car">
+                    <option class="form-calcu" value="perMonth">Per Month</option>
+                    <option class="form-calcu" value="perDay">Per Day</option>
+                    <option class="form-calcu" value="perHour">Per Hour</option>
+                    </select>
+            </div>
+            <button id="calculate-button" class="form-input" type="submit">Calculate Wage</button>
         </form>
+        <div id="result"></div>
     </div>
     
         <footer>
