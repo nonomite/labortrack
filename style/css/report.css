@@ -1,0 +1,128 @@
+
+#reporting_modal {
+    display: block;
+    display: flex;
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); 
+    margin: auto;
+    
+
+}
+
+.violationInfo {
+    width: 50%;
+    background-color: #181818;
+    color: white;
+    padding: 10px 20px;
+}
+
+.violationRight {
+    background-color: white;
+    width: 55%;
+    padding: 10px 20px;
+}
+
+.violation-reporting {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px 20px;
+    height: 45%;
+    border-radius: 10px;
+
+}
+
+.violation-reporting-input {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom:10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+}
+
+.violationReportFlexHolder{
+    display: flex;
+}
+
+.violationReportFlexHolder > div {
+    margin-right: 2%;
+}
+
+.reportBox {
+    border: 2px solid #181818;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.reportBoxChildFeed {
+    border: 2px solid blueviolet;
+    width: 74%;
+    height: 500px;
+}
+
+.reportBoxChildPanel{
+    border: 2px solid red;
+    width: 25%;
+    height: 500px;
+}
+
+#reportPopup, #violation-button, #submitReport{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+}
+
+#reportPopup:hover, #violation-button:hover, #submitReport:hover {
+    background-color: darkred;
+}
+
+.reportPageBody {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+#reportCode {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+h3 {
+   font-size: 25px; 
+}
+
+.label {
+    text-align: left;
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+}
+
+#submitReport {
+    margin-top: 0;
+}
+
+#reportPopup {
+    margin-top: 15%;
+}

@@ -13,7 +13,7 @@
             <header>
                 <div class="header-flex">
                     <div class="header-flex-container">
-                        <a href="index.html"class="header-flex-container">
+                        <a href="index.php"class="header-flex-container">
                             <img src="resources/labortrack.png" alt="MedWeb Logo" id="logo" class ="header-flex-item">
                             <h1 id="logo-text" class ="header-flex-item">LaborTrack</h1>
                         </a>
@@ -34,7 +34,7 @@
             <div class="parent-background">
                 <div class="left-div">
                     <h2>Welcome to <u>LaborTrack</u></h2>
-                    <p >Your trusted patform for understanding and advocating for your labor rights.
+                    <p>Your trusted patform for understanding and advocating for your labor rights.
                         <br> Explore our tools and resources designed to empower workers countrywide.
                     </p>
                 </div>
@@ -43,11 +43,11 @@
                         <h3>Wage Calculator</h3> 
                         <img src="resources/5.png" alt="Wage Calculator" class="responsive-image">
                     </a>
-                    <a id="violation-reporting" href="violation-report.html" class="flex-content">
+                    <a id="violation-reporting" href="violation-report.php" class="flex-content">
                         <h3>Violation Reporting</h3>
                         <img src="resources/6.png" alt="Violation Reporting" class="responsive-image">
                     </a>
-                    <a id="library" href="labor-library.html" class="flex-content">
+                    <a id="library" href="labor-library.php" class="flex-content">
                         <h3>Labor Rights Library</h3>
                         <img src="resources/7.png" alt="Library" class="responsive-image">
                     </a>
@@ -93,7 +93,7 @@
         <!--pop-up div for login and signup-->
         <div id="pop-up-container" class="modal">
             <div id="pop-up-box" class="modal-content">
-                <div class="header-flex-container">
+                <div class="header-flex-container-modal">
                         <img src="resources/labortrack.png" alt="MedWeb Logo" id="logo-pop-up" class ="header-flex-item">
                         <h2 class="brand-header">LaborTrack</h2>
                 </div>
@@ -110,11 +110,12 @@
 
                 <div id="signup-div">   
                     <form action="" id="signup-form">
-                        <p class="pop-up-heading1">Create an account first</p>
+                        <p class="pop-up-heading1">Sign up for an account first</p>
                         <input class="form-input" type="text" placeholder="Name" required><br><br>
                         <input class="form-input" type="email" placeholder="Email" required><br><br>
                         <input class="form-input" type="text" placeholder="Username" required><br><br>
                         <input class="form-input" type="password" placeholder="Password" required><br><br>
+                        <input type="checkbox" name="agree" id="agree"required>I agree to the Terms and Conditions<br><br>
                         <button id="signup-btn">SIGN UP</button><br>
                         or <br>
                         <button id="to-login-btn">SIGN IN</button>
@@ -125,13 +126,20 @@
 
         <!-- Contact Form -->
         <div id="contact-section" class="contact-section">
-                <h2 class="page-heading">Get in Touch with Us!</h2>
-                <p class="page-body">Have questions or feedback? We'd love to hear from you! Use the form below to reach out to us.</p>
+            <h2 class="page-heading">Get in Touch with Us!</h2>
+            <p class="page-body">Have questions or feedback? We'd love to hear from you! Use the form below to reach out to us.</p>
             <form id="contact-form" class="contact-form" action="">
-                <input class="form-input" type="text" placeholder="Your Name" required class="contact-input"><br><br>
-                <input class="form-input" type="email" placeholder="Your Email" required class="contact-input"><br><br>
-                <textarea class="form-input" rows="6" placeholder="Your Message" required class="contact-input"></textarea><br><br>
-                <button id="submit-btn" type="submit"  id="contact-btn">SEND MESSAGE</button>
+                <div class="contact_us_form_input_flex_container">
+                     <input class="form-input-contact-us" type="text" placeholder="Your Name" required class="contact-input">
+                    <input class="form-input-contact-us" type="email" placeholder="Your Email" required class="contact-input">
+                </div>
+                <div class="contact_us_form_input_flex_container">
+                    <input class="form-input-contact-us" type="company" placeholder="Your Company" required class="contact-input"><br><br>
+                    <input class="form-input-contact-us" type="industry" placeholder="Industry Type" required class="contact-input"><br><br>
+                </div>
+                <input class="form-input-contact-us" type="subject" placeholder="Subject" required class="contact-input"><br><br>
+                <textarea class="form-input-contact-us" rows="8" placeholder="Your Message" required class="contact-input"></textarea><br><br>
+                <button id="submit-btn" type="submit" id="contact-btn">SEND MESSAGE</button>
             </form>
         </div>
         

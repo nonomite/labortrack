@@ -1,0 +1,100 @@
+
+/* Library Page */
+
+ .parameterDiv {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+ }
+
+ .leftDiv{
+    background-color: #181818;
+    color: white;
+    width: 20%;
+    padding: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+ }
+
+ .rightDiv{
+    color: black;
+    margin-left: auto;
+    width: 75%;
+
+ }
+
+.content-scroll {
+    overflow: auto;
+}
+
+
+.search-div {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#input-search {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 100%;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* Article Div */
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    height: max-content;
+    margin-bottom: 50px;
+}
+
+.articles-content {
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.article-content h3 {
+    border: 1px solid black;
+    
+}
+
+.article-content p {
+    margin-top: 0;
+}
+
+.article a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.article a:hover {
+    color: darkred;
+}
+
+.article {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+

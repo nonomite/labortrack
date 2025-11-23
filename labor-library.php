@@ -13,14 +13,14 @@
             <header>
                 <div class="header-flex">
                     <div class="header-flex-container">
-                        <a href="index.html"class="header-flex-container">
+                        <a href="index.php"class="header-flex-container">
                             <img src="resources/labortrack.png" alt="MedWeb Logo" id="logo" class ="header-flex-item">
                             <h1 id="logo-text" class ="header-flex-item">LaborTrack</h1>
                         </a>
                     </div>
                     <nav class="nav-container">
                         <ul class="nav">
-                            <li class="nav-item"><a href="index.html">HOME</a></li>
+                            <li class="nav-item"><a href="index.php">HOME</a></li>
                             <li class="nav-item"><a id="pop-up-btn" href="#">SIGN IN</a></li>
                         </ul>
                     </nav>

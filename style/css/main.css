@@ -26,7 +26,7 @@ header {
 }
 
 #logo {
-    height: 55px;
+    height: 45px;
     vertical-align: middle;
     margin-right: 5px;
 }
@@ -35,6 +35,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 65px;
+    padding-left: 45px;
 }
 .header-flex-item {
     display: flex;
@@ -46,7 +48,7 @@ header {
 }
 
 #logo-text {
-    font-size: 55px;
+    font-size: 30px;
     font-weight: bold;
     vertical-align: middle;
 }
@@ -59,10 +61,9 @@ header {
 
 /* navigation styles */
 
-.nav-container > .nav-item{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.nav-container {
+    margin-right: 105px;
+    padding-right: 45px;
 }
 
 .nav-container ul {
@@ -72,7 +73,6 @@ header {
     padding: 0;
     padding: 10px;
     display: flex
-
 }
 
 .nav-container li {
@@ -113,15 +113,15 @@ h1, body, p {
 
 .page-heading {
     font-family: 'Segoe UI', sans-serif;
-    font-size: 45px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 35px;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
 }
 
 .page-body {
     font-family: 'Segoe UI', sans-serif;
     font-size: 20px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
  /* =============================================== */
@@ -176,6 +176,14 @@ footer {
     margin-right: 5px;
 }
 
+.header-flex-container-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 #signup-form {
     display: none;
 }
@@ -189,6 +197,9 @@ footer {
  /* =============================================== */
 
  /* library, contact and popup styles */
+
+
+
 .form-input {
     width: 100%;
     padding: 10px;
@@ -221,7 +232,7 @@ footer {
     height: 25px;
 }
 
-#submit-btn, #violation-button {
+#submit-btn {
     background-color: #181818;
     color: white;
     border: none;
@@ -232,7 +243,7 @@ footer {
     width: 100%;
 }
 
-#submit-btn:hover, #violation-button:hover {
+#submit-btn:hover {
     background-color: darkred;
 }
 
@@ -403,108 +414,13 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,.4);
 }
 
-/* =============================================== */
-
-
-/* Library Page */
-.search-div {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-#input-search {
-    width: 50%;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-    opacity: 100%;
-    font-size: 15px;
-    margin-bottom: 5px;
-}
-
-/* Article Div */
-.articles-container {
+.contact_us_form_input_flex_container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-    position: relative;
-    height: max-content;
-    margin-bottom: 50px;
-}
+    margin-bottom: 10px;
+} 
 
-.articles-content {
-    text-align: left;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    margin: auto;
-    width: 40%;
-    margin-bottom: 20px;
-}
-
-.article-content h3 {
-    border: 1px solid black;
-    
-}
-
-.article-content p {
-    margin-top: 0;
-}
-
-.article a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.article a:hover {
-    color: darkred;
-}
-
-.article {
-    margin-top: 10px;
-    margin-bottom: 10px
-}
-
-/* =============================================== */
-
-/* Violation Reporting */
-.violation-reporting {
-    display: block;
-    border-radius: 10px;
-    width: 40%;
-    margin: auto;
-    position: relative;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,.4);
-    margin-bottom: 100px;
-}
-
-
-/* =============================================== */
-
-/* Calculator */
-.calculator-section {
-    display: block;
-    border-radius: 10px;
-    width: 40%;
-    margin: auto;
-    position: relative;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,.4);
-    margin-bottom: 100px;
-}
-
-.form-calcu {
-    width: 50%;
+.form-input-contact-us{
+    width: 100%;
     padding: 10px;
     padding-bottom: 10px;
     border: 2px solid #ccc;
@@ -513,41 +429,7 @@ footer {
     font-family: 'Segoe UI', sans-serif;
     opacity: 100%;
     font-size: 15px;
-    margin-bottom: 15px;
+    margin-left: 5px;
 }
 
-.form-calcu-label {
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 15px;
-    box-sizing: border-box;
-    width: max-content;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
 
-
-}
-
-.form-calcu:focus {
-    border-color: #555;
-    outline: none;
-}
-
-.form-calcu:hover {
-    border-color: #888;
-}
-
-.form-flex {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.form-calcu > input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0; 
-}
-/* ========================================= */ 
